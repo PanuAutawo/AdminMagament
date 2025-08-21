@@ -1,0 +1,75 @@
+.Navstyle {
+  position: fixed;
+  width: 100%;
+  z-index: 15;
+  background-color: #111;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between; /* ซ้ายขวา */
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.NavLeft, .NavRight {
+  display: flex;
+  align-items: center;
+}
+
+.NavLink {
+  text-decoration: none;
+  color: #FFD700;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.NavLink:hover {
+  background-color: #FFD700;
+  color: #111;
+  transform: scale(1.05);
+}
+
+/* โปรไฟล์ด้านขวา */
+.Profile {
+  color: #FFD700;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.Profile:hover {
+  background-color: #FFD700;
+  color: #111;
+}
+
+/* Dropdown ของโปรไฟล์ */
+.ProfileDropdown {
+  position: absolute;
+  top: 60px; /* ปรับตามความสูง Navbar */
+  right: 30px;
+  background-color: #111;
+  border: 1px solid #FFD700;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+  z-index: 100;
+}
+
+.ProfileDropdown a {
+  padding: 10px 15px;
+  color: #FFD700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.ProfileDropdown a:hover {
+  background-color: #FFD700;
+  color: #111;
+}

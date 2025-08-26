@@ -5,7 +5,7 @@ import { carList } from '../../../data/carList';
 import CarGrid from '../../../components/CarGrid';
 import '../../../styles/sidebar.css';
 import Sorter from '../../../components/Sorter';
-import { Button} from 'antd';
+import { Button } from 'antd';
 import { Link } from 'react-router-dom';
 
 const conditionOrder = ['ดี', 'ปานกลาง', 'แย่'];
@@ -64,7 +64,7 @@ const HomePage: React.FC = () => {
   return (
     <>
 
-      <div style={{ display: 'Flex' }}>
+      <div style={{ display: 'Flex', width: '100%', marginTop: 5, padding: 10 }}>
         <div style={{ zIndex: 2 }}>
           <Filter
             carList={carList}
@@ -73,21 +73,21 @@ const HomePage: React.FC = () => {
             onClear={() => setFilters(null)}
           />
         </div>
-        <div style={{ marginLeft: 280, marginTop:45 }}>
+        <div style={{ marginLeft: 280, marginTop: 45 ,width:'100%'}}>
           <main className="mainWithSidebar">
-            <div style={{ height: 80,display: 'Flex', alignItems:'center',position:'fixed',width:'100%',backgroundColor:'#FFD700',zIndex:10,justifyContent:'space-between', padding:20}}>
+            <div style={{ height: 80, display: 'Flex', alignItems: 'center', position: 'fixed', width: '100%', backgroundColor: '#FFD700', zIndex: 10, justifyContent: 'space-between', padding: 20 }}>
               <h2>รถทั้งหมดในเตนท์</h2>
               <Sorter value={sortOption} onChange={setSortOption} />
-              <div style={{marginRight:300}}>
-                 <Link to="/stock/registerNewcar">
+              <div style={{ marginRight: 300 }}>
+                <Link to="/stock/registerNewcar">
                   <Button type="primary">+ ลงทะเบียนรถใหม่</Button>
-                  </Link>
+                </Link>
               </div>
             </div>
-            <div style={{paddingTop:80,paddingLeft:30}}>
-            <CarGrid cars={filteredCars} sellBasePath="/sell/add" rentBasePath="/rent/add" addBasePath="/stock/add" editBasePath="/stock/edit" />
-            </div>
           </main>
+          <div style={{ paddingTop: 80, paddingLeft: 30}}>
+            <CarGrid cars={filteredCars} sellBasePath="/sell/add" rentBasePath="/rent/add" addBasePath="/stock/add" editBasePath="/stock/edit" />
+          </div>
         </div>
       </div>
     </>

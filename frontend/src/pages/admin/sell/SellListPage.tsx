@@ -62,7 +62,7 @@ const SellListPage = () => {
   }, [filters, sortOption]);
 
   return (
-    <div style={{ display: 'Flex' }}>
+    <div style={{ display: 'Flex' ,width:'100%',marginTop:5,padding:10}}>
       <div style={{ zIndex: 2 }}>
         <Filter
           carList={carList}
@@ -71,7 +71,7 @@ const SellListPage = () => {
           onClear={() => setFilters(null)}
         />
       </div>
-      <div style={{ marginLeft: 280, marginTop: 45 }}>
+      <div style={{ marginLeft: 280, marginTop: 45 ,width:'100%'}}>
         <div style={{ height: 80, display: 'Flex', alignItems: 'center', position: 'fixed', width: '100%', backgroundColor: '#FFD700', zIndex: 10, justifyContent: 'space-between', padding: 20 }}>
           <h2>รถที่วางขาย</h2>
           <Sorter value={sortOption} onChange={setSortOption} />

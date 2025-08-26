@@ -23,11 +23,13 @@ const CarGrid: React.FC<CarGridProps> = ({
     <div
       style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(2, 1fr)', // fix 3 columns
-        gap: '5px',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(450px, 1fr))',
+        gap: '1px',
         padding: '10px',
+        width: '100%',
       }}
     >
+
       {cars.map((car) => (
         <CarCard
           key={car.id}
@@ -44,20 +46,22 @@ const CarGrid: React.FC<CarGridProps> = ({
           style={{
             border: '2px dashed #999',
             borderRadius: 8,
-            width: 500,
-            padding:'10px',
+            padding: '10px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             fontSize: '2rem',
-            minHeight:300
-            
+            minHeight: 300,
+            width: 450,
+
           }}
         >
-          ➕
+          เพิ่มรายการ➕
         </Link>
+
       )}
     </div>
+
   );
 };
 

@@ -34,7 +34,7 @@ const CarCard: React.FC<CarCardProps> = ({
   };
 
   return (
-    <div style={{ border: '1px solid #ccc', borderRadius: 8, padding: 10 ,width:500 }}>
+    <div style={{ border: '1px solid #ccc', borderRadius: 8, padding: 10 ,width:450 }}>
       {/* รูปเลื่อน */}
       {car.pic.length > 0 && (
         <div style={{ position: 'relative', textAlign: 'center'}}>

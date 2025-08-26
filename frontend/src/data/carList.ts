@@ -20,7 +20,7 @@ export const carList: CarInfo[] = [
   { id: 11, brand: "Toyota", model: "Vios", subModel: "Auto", mileage: 2000, price: 300000, yearManufactured: 2017, yearUsed: 7, condition: "ปานกลาง", pic: ["https://www.tiscoinsure.com/wp-content/uploads/new-dolphin-frost-white-Stz-z196011367717.webp"], status: ["ยังไม่ดำเนินการ"] },
   { id: 12, brand: "Toyota", model: "Vios", subModel: "Auto", mileage: 3000, price: 199999, yearManufactured: 2017, yearUsed: 7, condition: "ปานกลาง", pic: ["https://www.tiscoinsure.com/wp-content/uploads/new-dolphin-frost-white-Stz-z196011367717.webp"], status: ["ยังไม่ดำเนินการ"] },
 
-  { id: 13, brand: "Toyota", model: "Fortuner", subModel: "2.8 TRD", mileage: 90000, price: 1350000, yearManufactured: 2018, yearUsed: 6, condition: "ปานกลาง", pic: ["https://www.tiscoinsure.com/wp-content/uploads/new-dolphin-frost-white-Stz-z196011367717.webp"], status: ["กำลังขาย"] },
+  { id: 13, brand: "Toyota", model: "Fortuner", subModel: "2.8 TRD", mileage: 90000, price: 1380000, yearManufactured: 2018, yearUsed: 6, condition: "ปานกลาง", pic: ["https://www.tiscoinsure.com/wp-content/uploads/new-dolphin-frost-white-Stz-z196011367717.webp"], status: ["กำลังขาย"] },
   { id: 14, brand: "Toyota", model: "Yaris", subModel: "1.2 J", mileage: 25000, price: 320000, yearManufactured: 2020, yearUsed: 4, condition: "สวย", pic: ["https://www.tiscoinsure.com/wp-content/uploads/new-dolphin-frost-white-Stz-z196011367717.webp"], status: ["กำลังขาย"] },
   { id: 15, brand: "Toyota", model: "Hilux Revo", subModel: "2.4 E", mileage: 110000, price: 550000, yearManufactured: 2016, yearUsed: 8, condition: "ปานกลาง", pic: ["https://www.tiscoinsure.com/wp-content/uploads/new-dolphin-frost-white-Stz-z196011367717.webp"], status: ["กำลังขาย"] },
 

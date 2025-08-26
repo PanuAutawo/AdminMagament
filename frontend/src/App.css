@@ -1,3 +1,19 @@
-:root{
-    margin-left: 0rem ;
+/* App.css */
+body, #root {
+  margin: 0;
+  padding: 0;
+}
+
+/* ถ้าอยากให้ Navbar fixed ด้านบน */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* กันไม่ให้ content ชน navbar */
+.content {
+  padding-top: 2px; /* ปรับตามความสูงของ Navbar */
 }
